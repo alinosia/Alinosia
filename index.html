@@ -3,11 +3,213 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Alinosia Studios | Where Imagination Ascends</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0f1720;
+            color: #f7f7f7;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 8%;
+            background: rgba(8, 14, 22, 0.95);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .brand {
+            font-size: 1.4rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 24px;
+            opacity: 0.85;
+        }
+
+        nav a:hover {
+            opacity: 1;
+        }
+
+        .hero {
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 20px;
+            background:
+                radial-gradient(circle at top, rgba(118, 92, 255, 0.25), transparent 35%),
+                linear-gradient(180deg, #111827 0%, #0f1720 100%);
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 8vw, 6rem);
+            margin-bottom: 12px;
+            letter-spacing: 2px;
+        }
+
+        .tagline {
+            font-size: 1.5rem;
+            color: #d5cfff;
+            margin-bottom: 24px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: 0 auto;
+            font-size: 1.05rem;
+            color: #d1d5db;
+        }
+
+        .projects {
+            padding: 80px 8%;
+        }
+
+        .projects h2 {
+            text-align: center;
+            font-size: 2.4rem;
+            margin-bottom: 40px;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .project-card {
+            background: #18212d;
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 18px;
+            padding: 28px;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: #8f7cff;
+        }
+
+        .project-card h3 {
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+        }
+
+        .project-card p {
+            color: #c8ced8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #8f98a8;
+            border-top: 1px solid rgba(255,255,255,0.08);
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0 10px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Alinosia Studios</h1>
-    <p>Where Imagination Ascends.</p>
+
+    <header>
+        <div class="brand">ALINOSIA STUDIOS</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1>Alinosia Studios</h1>
+
+                <div class="tagline">
+                    Where Imagination Ascends.
+                </div>
+
+                <p>
+                    An independent creative studio building imaginative games,
+                    stories, characters, and worlds with heart, humor, and a
+                    healthy willingness to get a little weird.
+                </p>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <h2>Our Worlds</h2>
+
+            <div class="project-grid">
+
+                <div class="project-card">
+                    <h3>🐟 Halibut Scram</h3>
+                    <p>
+                        A chaotic ocean adventure filled with drifting trash,
+                        collectible treasures, strange power-ups, and one very
+                        determined halibut.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3>✨ Mystequines</h3>
+                    <p>
+                        A growing collection of magical equine characters inspired
+                        by mythology, nature, fantasy, and imagination.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3>🐾 A Day in the Life of Baldur</h3>
+                    <p>
+                        Heartwarming children's stories inspired by a gentle giant
+                        and the everyday moments that teach kindness, patience,
+                        and courage.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="about">
+        <p>© 2026 Alinosia Studios. Where Imagination Ascends.</p>
+    </footer>
+
 </body>
 </html>
